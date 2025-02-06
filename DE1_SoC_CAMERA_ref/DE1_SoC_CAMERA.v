@@ -250,6 +250,16 @@ wire	       [11:0]			sCCD_G;
 wire	       [11:0]			sCCD_B;
 wire								sCCD_DVAL;
 
+wire	       [11:0]			sCCD_R_RGB;
+wire	       [11:0]			sCCD_G_RGB;
+wire	       [11:0]			sCCD_B_RGB;
+wire								sCCD_DVAL_RGB;
+
+wire	       [11:0]			sCCD_R_EDGE;
+wire	       [11:0]			sCCD_G_EDGE;
+wire	       [11:0]			sCCD_B_EDGE;
+wire								sCCD_DVAL_EDGE;
+
 wire								sdram_ctrl_clk;
 wire	       [9:0]			oVGA_R;   				//	VGA Red[9:0]
 wire	       [9:0]			oVGA_G;	 				//	VGA Green[9:0]
@@ -329,7 +339,8 @@ EDGE_DETECT       u4_5 (
 							.iRST(DLY_RST_1),
 							.iDATA(mCCD_DATA),
 							.iDVAL(mCCD_DVAL),
-                     .iIsHorizontalEdge(SW[2])
+                     .iIsEdgeDetect(SW[2])
+                     .iIsHorizontalEdge(SW[3])
 							.oRed(sCCD_R_EDGE),
 							.oGreen(sCCD_G_EDGE),
 							.oBlue(sCCD_B_EDGE),
