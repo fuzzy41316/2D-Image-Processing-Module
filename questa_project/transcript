@@ -1,0 +1,18 @@
+# Compile of DE1_SoC_CAMERA.v was successful.
+# Compile of sdram_pll.vo was successful.
+# Compile of sdram_pll_0002.v was successful.
+# Compile of CCD_Capture.v was successful.
+# Compile of I2C_CCD_Config.v was successful.
+# Compile of I2C_Controller.v was successful.
+# Compile of Line_Buffer1.v was successful.
+# Compile of RAW2RGB.v was successful.
+# Compile of Reset_Delay.v was successful.
+# Compile of sdram_pll.v was successful.
+# Compile of SEG7_LUT.v was successful.
+# Compile of SEG7_LUT_6.v was successful.
+# Compile of VGA_Controller.v was successful.
+# 13 compiles, 0 failed with no errors.
+# Compile of DE1_SoC_CAMERA.v was successful.
+# Compile of CCD_Capture.v was successful.
+# Compile of Sdram_Control.v was successful.
+# 3 compiles, 0 failed with no errors.
