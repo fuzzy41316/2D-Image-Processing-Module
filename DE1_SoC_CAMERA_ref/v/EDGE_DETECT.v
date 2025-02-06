@@ -45,6 +45,7 @@ module EDGE_DETECT	(
 					oGreen,
 					oBlue,
 					oDVAL,
+					iEdgeDetect,
 					iIsHorizontalEdge,
 					iX_Cont,
 					iY_Cont,
