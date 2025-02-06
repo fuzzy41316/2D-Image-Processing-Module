@@ -339,8 +339,8 @@ EDGE_DETECT       u4_5 (
 							.iRST(DLY_RST_1),
 							.iDATA(mCCD_DATA),
 							.iDVAL(mCCD_DVAL),
-                     .iIsEdgeDetect(SW[2])
-                     .iIsHorizontalEdge(SW[3])
+                     .iIsEdgeDetect(SW[2]),
+                     .iIsHorizontalEdge(SW[3]),
 							.oRed(sCCD_R_EDGE),
 							.oGreen(sCCD_G_EDGE),
 							.oBlue(sCCD_B_EDGE),
