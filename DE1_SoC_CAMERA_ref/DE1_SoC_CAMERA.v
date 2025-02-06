@@ -316,13 +316,42 @@ RAW2RGB				u4	(
 							.iRST(DLY_RST_1),
 							.iDATA(mCCD_DATA),
 							.iDVAL(mCCD_DVAL),
-							.oRed(sCCD_R),
-							.oGreen(sCCD_G),
-							.oBlue(sCCD_B),
-							.oDVAL(sCCD_DVAL),
+							.oRed(sCCD_R_RGB),
+							.oGreen(sCCD_G_RGB),
+							.oBlue(sCCD_B_RGB),
+							.oDVAL(sCCD_DVAL_RGB),
 							.iX_Cont(X_Cont),
 							.iY_Cont(Y_Cont)
 						   );
+
+EDGE_DETECT       u4_5 (
+                     .iCLK(D5M_PIXLCLK),
+							.iRST(DLY_RST_1),
+							.iDATA(mCCD_DATA),
+							.iDVAL(mCCD_DVAL),
+                     .iIsHorizontalEdge(SW[2])
+							.oRed(sCCD_R_EDGE),
+							.oGreen(sCCD_G_EDGE),
+							.oBlue(sCCD_B_EDGE),
+							.oDVAL(sCCD_DVAL_EDGE),
+							.iX_Cont(X_Cont),
+							.iY_Cont(Y_Cont)
+						);
+
+always_comb begin
+   if (SW[1]) begin
+      sCCD_R = sCCD_R_EDGE;
+      sCCD_G = sCCD_G_EDGE;
+      sCCD_B = sCCD_B_EDGE;
+      sCCD_DVAL = sCCD_DVAL_EDGE;
+   end 
+   else begin
+      sCCD_R = sCCD_R_RGB;
+      sCCD_G = sCCD_G_RGB;
+      sCCD_B = sCCD_B_RGB;
+      sCCD_DVAL = sCCD_DVAL_RGB;
+   end
+end
 
 //Frame count display
 SEG7_LUT_6 			u5	(	
