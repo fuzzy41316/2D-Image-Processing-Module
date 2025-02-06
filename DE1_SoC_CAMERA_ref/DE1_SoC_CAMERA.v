@@ -349,20 +349,10 @@ EDGE_DETECT       u4_5 (
 							.iY_Cont(Y_Cont)
 						);
 
-always_comb begin
-   if (SW[1]) begin
-      sCCD_R = sCCD_R_EDGE;
-      sCCD_G = sCCD_G_EDGE;
-      sCCD_B = sCCD_B_EDGE;
-      sCCD_DVAL = sCCD_DVAL_EDGE;
-   end 
-   else begin
-      sCCD_R = sCCD_R_RGB;
-      sCCD_G = sCCD_G_RGB;
-      sCCD_B = sCCD_B_RGB;
-      sCCD_DVAL = sCCD_DVAL_RGB;
-   end
-end
+assign sCCD_R = SW[1] ? sCCD_R_EDGE : sCCD_R_RGB;
+assign sCCD_G = SW[1] ? sCCD_G_EDGE : sCCD_G_RGB;
+assign sCCD_B = SW[1] ? sCCD_B_EDGE : sCCD_B_RGB;
+assign sCCD_DVAL = SW[1] ? sCCD_DVAL_EDGE : sCCD_DVAL_RGB;
 
 //Frame count display
 SEG7_LUT_6 			u5	(	
