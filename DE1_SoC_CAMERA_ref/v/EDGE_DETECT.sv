@@ -45,7 +45,7 @@ module EDGE_DETECT	(
 					oGreen,
 					oBlue,
 					oDVAL,
-					iEdgeDetect,
+					iIsEdgeDetect,
 					iIsHorizontalEdge,
 					iX_Cont,
 					iY_Cont,
@@ -61,7 +61,7 @@ input	[11:0]	iDATA;
 input			iDVAL;
 input			iCLK;
 input			iRST;
-input			iEdgeDetect;
+input			iIsEdgeDetect;
 input			iIsHorizontalEdge;
 output	[11:0]	oRed;
 output	[11:0]	oGreen;
@@ -76,9 +76,9 @@ reg		[12:0]	mCCD_G;
 reg		[11:0]	mCCD_B;
 reg				mDVAL;
 
-assign	oRed	=	(iX_Cont == 0 && iY_Cont == 0) ? '1 : mCCD_R[11:0];
-assign	oGreen	=	(iX_Cont == 0 && iY_Cont == 0) ? '0 : mCCD_G[12:1];
-assign	oBlue	=	(iX_Cont == 0 && iY_Cont == 0) ? '0 : mCCD_B[11:0];
+assign	oRed	=	((iX_Cont < 10 && iY_Cont == 1)) ? '1 : mCCD_R[11:0];
+assign	oGreen	=	((iX_Cont < 10 && iY_Cont == 1)) ? '0 : mCCD_G[12:1];
+assign	oBlue	=	((iX_Cont < 10 && iY_Cont == 1)) ? '0 : mCCD_B[11:0];
 assign	oDVAL	=	mDVAL;
 
 Line_Buffer1 	u0	(	.clken(iDVAL),
