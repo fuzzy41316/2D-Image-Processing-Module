@@ -76,10 +76,10 @@ reg		[12:0]	mCCD_G;
 reg		[11:0]	mCCD_B;
 reg				mDVAL;
 
-assign	oRed	=	(iX_Cont == 0 && iY_Cont == 0) ? mCCD_R[11:0];
-assign	oGreen	=	(iX_Cont == 0 && iY_Cont == 0) ? mCCD_G[12:1];
-assign	oBlue	=	(iX_Cont == 0 && iY_Cont == 0) ? mCCD_B[11:0];
-assign	oDVAL	=	(iX_Cont == 0 && iY_Cont == 0) ? mDVAL;
+assign	oRed	=	(iX_Cont == 0 && iY_Cont == 0) ? '1 : mCCD_R[11:0];
+assign	oGreen	=	(iX_Cont == 0 && iY_Cont == 0) ? '0 : mCCD_G[12:1];
+assign	oBlue	=	(iX_Cont == 0 && iY_Cont == 0) ? '0 : mCCD_B[11:0];
+assign	oDVAL	=	mDVAL;
 
 Line_Buffer1 	u0	(	.clken(iDVAL),
 						.clock(iCLK),
