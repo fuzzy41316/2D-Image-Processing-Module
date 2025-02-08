@@ -150,7 +150,7 @@ begin
 		mDVAL <= {iY_Cont[0]|iX_Cont[0]} ? 1'b0 : iDVAL;
 
 		// Greyscale conversion
-		
+		shift_imm <= m
 
 		mCCD_R <=
 		mCCD_G <=
