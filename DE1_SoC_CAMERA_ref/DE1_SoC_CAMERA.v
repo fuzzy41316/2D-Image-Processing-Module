@@ -265,6 +265,8 @@ wire	       [9:0]			oVGA_R;   				//	VGA Red[9:0]
 wire	       [9:0]			oVGA_G;	 				//	VGA Green[9:0]
 wire	       [9:0]			oVGA_B;   				//	VGA Blue[9:0]
 
+reg                        SW1_ff;
+
 //power on start
 wire             				auto_start;
 //=======================================================
@@ -334,6 +336,7 @@ RAW2RGB				u4	(
 							.iY_Cont(Y_Cont)
 						   );
 
+// Grayscale and edge detection happen here
 EDGE_DETECT       u4_5 (
                      .iCLK(D5M_PIXLCLK),
 							.iRST(DLY_RST_1),
@@ -349,6 +352,7 @@ EDGE_DETECT       u4_5 (
 							.iY_Cont(Y_Cont)
 						);
 
+// Choose between edge detection or grayscale depending on switch
 assign sCCD_R = SW[1] ? sCCD_R_EDGE : sCCD_R_RGB;
 assign sCCD_G = SW[1] ? sCCD_G_EDGE : sCCD_G_RGB;
 assign sCCD_B = SW[1] ? sCCD_B_EDGE : sCCD_B_RGB;

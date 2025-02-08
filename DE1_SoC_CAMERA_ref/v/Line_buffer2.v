@@ -4,7 +4,7 @@
 // MODULE: ALTSHIFT_TAPS 
 
 // ============================================================
-// File Name: Line_buffer2.v
+// File Name: Line_Buffer2.v
 // Megafunction Name(s):
 // 			ALTSHIFT_TAPS
 //
@@ -37,7 +37,7 @@
 // synopsys translate_off
 `timescale 1 ps / 1 ps
 // synopsys translate_on
-module Line_buffer2 (
+module Line_Buffer2 (
 	clken,
 	clock,
 	shiftin,
@@ -114,9 +114,9 @@ endmodule
 // Retrieval info: CONNECT: @shiftin 0 0 12 0 shiftin 0 0 12 0
 // Retrieval info: CONNECT: shiftout 0 0 12 0 @shiftout 0 0 12 0
 // Retrieval info: CONNECT: taps 0 0 12 0 @taps 0 0 12 0
-// Retrieval info: GEN_FILE: TYPE_NORMAL Line_buffer2.v TRUE
-// Retrieval info: GEN_FILE: TYPE_NORMAL Line_buffer2.inc FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL Line_buffer2.cmp FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL Line_buffer2.bsf FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL Line_buffer2_inst.v FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL Line_buffer2_bb.v FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL Line_Buffer2.v TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL Line_Buffer2.inc FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL Line_Buffer2.cmp FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL Line_Buffer2.bsf FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL Line_Buffer2_inst.v FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL Line_Buffer2_bb.v FALSE
