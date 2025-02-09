@@ -202,7 +202,7 @@ module testbench();
         CLOCK_50 = 0;
         @(negedge CLOCK_50) KEY[0] = 1;
         @(negedge CLOCK_50) KEY[0] = 0; 
-        $display("Successfully reset the DUT.");
+        $display("Successfully reset the DUT.\n");
 
         // Test that SW[1] chooses grayscale mode
         $display("////////////////////////////////\n// Testing grayscale mode... //\n//////////////////////////////");
@@ -229,6 +229,7 @@ module testbench();
                 @(posedge DUT.mCCD_DVAL) begin
                     $display("Checking on valid signal that the selected pixel was swapped to our image_processing module...");
                     $display("------------------------");
+                    $display("Every RGB output from image processing must = sCCD_R input to SDRAM.");
                     if (DUT.sCCD_R !== DUT.sCCD_R_EDGE) begin
                         $display("  ERR: selected red pixel was not swapped.");
                         $stop();
@@ -248,6 +249,7 @@ module testbench();
                     $display("------------------------");
                     $display("Checking that the selected pixel was converted to grayscale...");
                     $display("------------------------");
+                    $display("Every pixel must = (mDATA_ff + mDATA + iDATA_ff + iDATA) / 4.");
                     if (DUT.u4_5.pixel_value !== DUT.u4_5.grayscale_pixel_value) begin
                         $display("  ERR: pixel value was not converted to grayscale.");
                         $stop();
@@ -275,15 +277,53 @@ module testbench();
                 $display("//////////////////////////////////\n// Grayscale mode test passed. //\n////////////////////////////////");
             end
         join
+
         // Turn off grayscale mode
-        $display("Setting SW[1] to 0 to turn off grayscale mode...");
+        $display("\nSetting SW[1] to 0 to turn off grayscale mode...");
         @(negedge CLOCK_50) SW[1] = 0;
+        // Release the forced signals
+        $display("Releasing forced signals...");
+        release DUT.mCCD_DATA;
+        release DUT.mCCD_DVAL;
+        release DUT.X_Cont;
+        release DUT.Y_Cont;
+        $display("Forced signals released.\n");
 
         // Test that SW[1] off turns off grayscale mode and turns on RGB mode
+        $display("//////////////////////////\n// Testing RGB mode... //\n////////////////////////");
+        $display("------------------------");
+        fork 
+            begin: RGB_to
+                repeat(25000) @(posedge CLOCK_50);
+                $display("  ERR: timeout reached waiting for RGB mode to be switched on.");
+                $stop();
+            end: RGB_to
+            begin
+                $display("All pixel inputs to SDRAM must = sCCD_R_RGB, sCCD_G_RGB, sCCD_B_RGB.");
+                if (DUT.sCCD_R !== DUT.sCCD_R_RGB) begin
+                    $display("  ERR: selected red pixel was not swapped back to RGB.");
+                    $stop();
+                end
+                $display("  Red pixel was swapped back to RGB.");
+                if (DUT.sCCD_G !== DUT.sCCD_G_RGB) begin
+                    $display("  ERR: selected green pixel was not swapped back to RGB.");
+                    $stop();
+                end
+                $display("  Green pixel was swapped back to RGB.");
+                if (DUT.sCCD_B !== DUT.sCCD_B_RGB) begin
+                    $display("  ERR: selected blue pixel was not swapped back to RGB.");
+                    $stop();
+                end
+                $display("  Blue pixel was swapped back to RGB.");
+                $display("  SUCCESS: all selected pixels were swapped back to RGB.");
+                $display("------------------------");
+                $display("////////////////////////////\n// RGB mode test passed. //\n//////////////////////////");
+                disable RGB_to;
+            end
+        join
+
+        // Test EDGE Detection
         
-
-
-
 
         $stop();
     end
