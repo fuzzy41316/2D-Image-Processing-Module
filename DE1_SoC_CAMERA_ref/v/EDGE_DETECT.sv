@@ -39,6 +39,10 @@ logic			[13:0]  edge_pixel_value_bottom_bits;
 logic			[13:0]	edge_pixel_value_abs;
 logic			[11:0]  convolution_input[0:2][0:2];
 
+// Initial value for convolution
+assign convolution_input[2][2] =  grayscale_pixel_value;
+
+// Convert edge detected pixels to be always positive
 assign edge_pixel_value_bottom_bits = edge_pixel_value_signed[13:0];
 assign edge_pixel_value_abs = edge_pixel_value_signed[14] ? (~edge_pixel_value_bottom_bits) + 1 : edge_pixel_value_bottom_bits;
 assign pixel_value = iIsEdgeDetect ? edge_pixel_value_abs[11:0] : grayscale_pixel_value;
@@ -46,7 +50,7 @@ assign pixel_value = iIsEdgeDetect ? edge_pixel_value_abs[11:0] : grayscale_pixe
 assign	oRed	=	pixel_value;
 assign	oGreen	=	pixel_value;
 assign	oBlue	=	pixel_value;
-assign	oDVAL	=	iIsEdgeDetect ? edge_done : mDVAL;
+assign	oDVAL	=	mDVAL;
 
 // Line buffer used for grayscale conversion
 Line_Buffer2 u0 (
@@ -59,7 +63,7 @@ Line_Buffer2 u0 (
 
 Line_Buffer3 u1 (
 	//Inputs
-	.clken(iDVAL),
+	.clken(mDVAL),
 	.clock(iCLK),
 	.shiftin(convolution_input[2][2]),
 	.taps(convolution_input[1][2])
@@ -67,7 +71,7 @@ Line_Buffer3 u1 (
 
 Line_Buffer3 u2 (
 	//Inputs
-	.clken(iDVAL),
+	.clken(mDVAL),
 	.clock(iCLK),
 	.shiftin(convolution_input[1][2]),
 	.taps(convolution_input[0][2])
@@ -94,6 +98,7 @@ begin
 	end
 end
 
+// Propagate values left and up in the matrix for convolution
 always@(posedge iCLK or negedge iRST)
 begin
 	if(!iRST)
@@ -102,7 +107,6 @@ begin
 		convolution_input[0][0]	<=	0;
 		convolution_input[1][1]	<=	0;
 		convolution_input[1][0]	<=	0;
-		convolution_input[2][2] <=  0;
 		convolution_input[2][1]	<=	0;
 		convolution_input[2][0]	<=	0;
 	end
@@ -112,30 +116,20 @@ begin
 		convolution_input[0][0]	<=	convolution_input[0][1];
 		convolution_input[1][1]	<=	convolution_input[1][2];
 		convolution_input[1][0]	<=	convolution_input[1][1];
-		convolution_input[2][2] <=  grayscale_pixel_value;
 		convolution_input[2][1]	<=	convolution_input[2][2];
 		convolution_input[2][0]	<=	convolution_input[2][1];
 	end
 end
 
-always@(posedge iCLK or negedge iRST)
-begin
-	if(!iRST)
-	begin
-		edge_pixel_value_signed <= 0;
-		edge_done <= 0;
+// Matrix multiplication for horizontal and vertical edge detection
+always_comb begin
+	if(iIsHorizontalEdge) begin
+		edge_pixel_value_signed <= convolution_input[2][0] + 2 * convolution_input[2][1] + convolution_input[2][2]
+			- convolution_input[0][0] - 2 * convolution_input[0][1] - convolution_input[0][2];
 	end
-	else
-	begin
-		edge_done <= mDVAL;
-		if(!iIsHorizontalEdge) begin
-			edge_pixel_value_signed <= convolution_input[2][0] + 2 * convolution_input[2][1] + convolution_input[2][2]
-				- convolution_input[0][0] - 2 * convolution_input[0][1] - convolution_input[0][2];
-		end
-		else begin
-			edge_pixel_value_signed <= convolution_input[0][2] + 2 * convolution_input[1][2] + convolution_input[2][2]
-				- convolution_input[0][0] - 2 * convolution_input[1][0] - convolution_input[2][0];
-		end
+	else begin
+		edge_pixel_value_signed <= convolution_input[0][2] + 2 * convolution_input[1][2] + convolution_input[2][2]
+			- convolution_input[0][0] - 2 * convolution_input[1][0] - convolution_input[2][0];
 	end
 end
 
