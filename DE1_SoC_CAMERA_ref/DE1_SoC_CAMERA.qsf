@@ -753,6 +753,11 @@ set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name VERILOG_FILE v/Line_Buffer3.v
+set_global_assignment -name QIP_FILE v/Line_Buffer3.qip
+set_global_assignment -name VERILOG_FILE v/Line_Buffer2.v
+set_global_assignment -name QIP_FILE v/Line_buffer2.qip
+set_global_assignment -name SYSTEMVERILOG_FILE v/EDGE_DETECT.sv
 set_global_assignment -name VERILOG_FILE "I:\\ECE554\\DE1-SoC_v.5.1.1_HWrevF_SystemCD\\Tools\\SystemBuilder\\CodeGenerated\\DE1_SOC\\ECE554_minilab2\\DE1_SoC_CAMERA_ref\\v\\Line_Buffer3.v"
 set_global_assignment -name QIP_FILE "I:\\ECE554\\DE1-SoC_v.5.1.1_HWrevF_SystemCD\\Tools\\SystemBuilder\\CodeGenerated\\DE1_SOC\\ECE554_minilab2\\DE1_SoC_CAMERA_ref\\v\\Line_Buffer3.qip"
 set_global_assignment -name VERILOG_FILE "I:\\ECE554\\DE1-SoC_v.5.1.1_HWrevF_SystemCD\\Tools\\SystemBuilder\\CodeGenerated\\DE1_SOC\\ECE554_minilab2\\DE1_SoC_CAMERA_ref\\v\\Line_Buffer2.v"

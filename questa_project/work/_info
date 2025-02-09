@@ -67,6 +67,8 @@ R0
 R1
 R0
 R1
+R0
+R1
 !s12c _opt1
 R1
 R0
@@ -86,10 +88,10 @@ R1
 cModel Technology
 Z2 dC:/intelFPGA_lite/23.1std
 T_opt
-!s110 1739131841
-VcgOicFGIY4ng0GUbQ04nA2
+!s110 1739131906
+V>bzm`7MnNjO@OobE_lLF63
 Z3 04 9 4 work testbench fast 0
-=8-4cd71794e218-67a90bc0-287-4cb8
+=9-4cd71794e218-67a90c00-3bb-4cb8
 R1
 Z4 !s12b OEM100
 Z5 !s124 OEM10U30 
@@ -97,7 +99,6 @@ o-quiet -auto_acc_if_foreign -work work -L altera_mf -L altera_lnsim -L lpm -L s
 Z6 tCvgOpt 0
 n@_opt
 Z7 OL;O;2023.3;77
-R2
 T_opt1
 !s110 1739126764
 VD;TmRFdCTa5Me69icXMiO2
