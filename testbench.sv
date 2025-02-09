@@ -317,15 +317,77 @@ module testbench();
                 $display("  Blue pixel was swapped back to RGB.");
                 $display("  SUCCESS: all selected pixels were swapped back to RGB.");
                 $display("------------------------");
-                $display("////////////////////////////\n// RGB mode test passed. //\n//////////////////////////");
+                $display("////////////////////////////\n// RGB mode test passed. //\n//////////////////////////\n");
                 disable RGB_to;
             end
         join
 
         // Test EDGE Detection
-        
+        $display("/////////////////////////////\n// Testing EDGE Detection //\n///////////////////////////");
+        $display("------------------------");
+        $display("SW[1] on for grayscale mode, SW[2] on to turn on edge detection, where horizontal edge detection is defaulted on.");
+        fork
+            begin: edge_detect_to
+                @(negedge CLOCK_50) begin
+                    SW[1] = 0;
+                    SW[2] = 0;  
+                    SW[3] = 0;  
+                end
+                @(negedge CLOCK_50) begin
+                    SW[1] = 1;
+                    SW[2] = 1;  
+                    SW[3] = 1;
+                end
+                repeat(25000) @(posedge CLOCK_50);
+                $display("  ERR: timeout reached waiting for RGB mode to be switched on.");
+                $stop();
+            end: edge_detect_to
+            begin
+                $display("------------------------");
+                $display("Checking that edge detection was turned on...");
+                if (DUT.u4_5.iIsEdgeDetect) begin
+                    $display("  ERR: edge detection was not turned on.");
+                    $stop();
+                end
+                $display("  SUCCESS: Edge detection was turned on.");
+                $display("------------------------");
+                $display("Checking that horizontal edge detection was turned on...");
+                if (DUT.u4_5.iIsHorizontalEdge) begin
+                    $display("  ERR: horizontal edge detection was not turned on.");
+                    $stop();
+                end
+                $display("  SUCCESS: Horizontal edge detection was turned on.");
+                $display("------------------------");
+                $display("Pixel value should be changed to be filtered by the sobel filter kernel...");
+                if (DUT.u4_5.pixel_value !== DUT.u4_5.edge_pixel_value_abs[11:0]) begin
+                    $display("  ERR: pixel value was not converted to edge_pixel_value_abs.");
+                    $stop();
+                end
+                $display("  SUCCESS: Pixel value was converted to edge_pixel_value_abs.");
+                $display("------------------------");
+                $display("Checking that the pixel was properly filtered by the sobel filter kernel...");
+                $display("Every pixel must = convolution_input[2][0] + 2 * convolution_input[2][1] + convolution_input[2][2] - convolution_input[0][0] - 2 * convolution_input[0][1] - convolution_input[0][2].");
+                if (DUT.u4_5.edge_pixel_value_signed !== DUT.u4_5.edge_pixel_value_abs) begin
+                    $display("  ERR: pixel value was not filtered by the sobel filter kernel.");
+                    $stop();
+                end
+                $display("  SUCCESS: Pixel value was filtered by the horizontal-edge sobel kernel.");
+                $display("------------------------");
+                @(negedge CLOCK_50) SW[3] = 0;
+                $display("Checking that SW[3] off turns on vertical edge detection...");
+                $display("Every pixel must = convolution_input[0][2] + 2 * convolution_input[1][2] + convolution_input[2][2] - convolution_input[0][0] - 2 * convolution_input[1][0] - convolution_input[2][0].");
+                if (DUT.u4_5.edge_pixel_value_signed !== DUT.u4_5.edge_pixel_value_abs) begin
+                    $display("  ERR: pixel value was not filtered by the sobel filter kernel.");
+                    $stop();
+                end
+                $display("  SUCCESS: Pixel value was filtered by the vertical-edge sobel kernel.");
+                $display("------------------------");
+                disable edge_detect_to;
+            end
+        join
+        $display("//////////////////////////////////\n// EDGE Detection test passed. //\n////////////////////////////////");
 
-        $stop();
+        $stop();    
     end
 
     always #1 CLOCK_50 = ~CLOCK_50; // Artificial clock signal
