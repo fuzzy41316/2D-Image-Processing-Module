@@ -1,1 +1,155 @@
+I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_WR_FIFO.v {1 {vlog -work work -vopt -stats=none I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_WR_FIFO.v
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module Sdram_WR_FIFO
 
+Top level modules:
+	Sdram_WR_FIFO
+
+} {} {}} I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll/sdram_pll_0002.v {1 {vlog -work work -vopt -stats=none I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll/sdram_pll_0002.v
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module sdram_pll_0002
+
+Top level modules:
+	sdram_pll_0002
+
+} {} {}} I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/CCD_Capture.v {1 {vlog -work work -vopt -stats=none I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/CCD_Capture.v
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module CCD_Capture
+
+Top level modules:
+	CCD_Capture
+
+} {} {}} I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/RAW2RGB.v {1 {vlog -work work -vopt -stats=none I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/RAW2RGB.v
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module RAW2RGB
+
+Top level modules:
+	RAW2RGB
+
+} {} {}} I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/sdr_data_path.v {1 {vlog -work work -vopt -stats=none I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/sdr_data_path.v
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module sdr_data_path
+
+Top level modules:
+	sdr_data_path
+
+} {} {}} I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/EDGE_DETECT.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/EDGE_DETECT.sv
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module EDGE_DETECT
+
+Top level modules:
+	EDGE_DETECT
+
+} {} {}} I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_Control.v {1 {vlog -work work -vopt -stats=none I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_Control.v
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module Sdram_Control
+
+Top level modules:
+	Sdram_Control
+
+} {} {}} I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/I2C_Controller.v {1 {vlog -work work -vopt -stats=none I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/I2C_Controller.v
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module I2C_Controller
+
+Top level modules:
+	I2C_Controller
+
+} {} {}} I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/Reset_Delay.v {1 {vlog -work work -vopt -stats=none I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/Reset_Delay.v
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module Reset_Delay
+
+Top level modules:
+	Reset_Delay
+
+} {} {}} I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/Line_Buffer1.v {1 {vlog -work work -vopt -stats=none I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/Line_Buffer1.v
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module Line_Buffer1
+
+Top level modules:
+	Line_Buffer1
+
+} {} {}} I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/control_interface.v {1 {vlog -work work -vopt -stats=none I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/control_interface.v
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module control_interface
+
+Top level modules:
+	control_interface
+
+} {} {}} I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll_sim/sdram_pll.vo {1 {vlog -work work -vopt -stats=none I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll_sim/sdram_pll.vo
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module sdram_pll
+
+Top level modules:
+	sdram_pll
+
+} {} {}} I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/Line_Buffer2.v {1 {vlog -work work -vopt -stats=none I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/Line_Buffer2.v
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module Line_Buffer2
+
+Top level modules:
+	Line_Buffer2
+
+} {} {}} I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/Line_Buffer3.v {1 {vlog -work work -vopt -stats=none I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/Line_Buffer3.v
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module Line_Buffer3
+
+Top level modules:
+	Line_Buffer3
+
+} {} {}} I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/I2C_CCD_Config.v {1 {vlog -work work -vopt -stats=none I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/I2C_CCD_Config.v
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module I2C_CCD_Config
+
+Top level modules:
+	I2C_CCD_Config
+
+} {} {}} I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll.v {1 {vlog -work work -vopt -stats=none I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll.v
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module sdram_pll
+
+Top level modules:
+	sdram_pll
+
+} {} {}} I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/SEG7_LUT_6.v {1 {vlog -work work -vopt -stats=none I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/SEG7_LUT_6.v
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module SEG7_LUT_6
+
+Top level modules:
+	SEG7_LUT_6
+
+} {} {}} I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_RD_FIFO.v {1 {vlog -work work -vopt -stats=none I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_RD_FIFO.v
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module Sdram_RD_FIFO
+
+Top level modules:
+	Sdram_RD_FIFO
+
+} {} {}} I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/command.v {1 {vlog -work work -vopt -stats=none I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/command.v
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module command
+
+Top level modules:
+	command
+
+} {} {}} I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/DE1_SoC_CAMERA.v {1 {vlog -work work -vopt -stats=none I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/DE1_SoC_CAMERA.v
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module DE1_SoC_CAMERA
+
+Top level modules:
+	DE1_SoC_CAMERA
+
+} {} {}} I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/VGA_Controller.v {1 {vlog -work work -vopt -stats=none I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/VGA_Controller.v
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module VGA_Controller
+
+Top level modules:
+	VGA_Controller
+
+} {} {}} I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/SEG7_LUT.v {1 {vlog -work work -vopt -stats=none I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/SEG7_LUT.v
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module SEG7_LUT
+
+Top level modules:
+	SEG7_LUT
+
+} {} {}}

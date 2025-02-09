@@ -1,0 +1,1 @@
+vsim -Lf C:/intelFPGA_lite/23.1std/questa_fse/intel/verilog/altera_mf -Lf C:/intelFPGA_lite/23.1std/questa_fse/intel/verilog/220model -L altera_mf -L altera_lnsim -L lpm -L sgate -L altera work.testbench

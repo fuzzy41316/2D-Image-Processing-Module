@@ -1,6 +1,52 @@
 m255
 K4
 z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+!s12c _opt1
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
 !s11f vlog 2023.3 2023.07, Jul 17 2023
 13
 !s112 1.1
@@ -8,315 +54,559 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-dC:/intelFPGA_lite/23.1std
+Z2 dC:/intelFPGA_lite/23.1std
+T_opt
+!s110 1739128739
+VIPVQ9Q4nReXoL`0:1SMOi3
+Z3 04 9 4 work testbench fast 0
+=1-4cd71794e218-67a8ffa1-301-3de0
+R1
+Z4 !s12b OEM100
+Z5 !s124 OEM10U30 
+o-quiet -auto_acc_if_foreign -work work -L altera_mf -L altera_lnsim -L lpm -L sgate -L altera -Lf C:/intelFPGA_lite/23.1std/questa_fse/intel/verilog/altera_mf -Lf C:/intelFPGA_lite/23.1std/questa_fse/intel/verilog/220model
+Z6 tCvgOpt 0
+n@_opt
+Z7 OL;O;2023.3;77
+T_opt1
+!s110 1739126764
+VD;TmRFdCTa5Me69icXMiO2
+R3
+=1-4cd71794e218-67a8f7eb-274-42c4
+R1
+R4
+R5
+o-quiet -auto_acc_if_foreign -work work -L altera_mf -L altera_lnsim -L lpm -L sgate -L altera -Lf C:/intelFPGA_lite/23.1std/questa_fse/intel/verilog/altera_mf -Lf C:/intelFPGA_lite/23.1std/questa_fse/intel/verilog/220model +acc
+R6
+n@_opt1
+R7
+R2
 vCCD_Capture
 2I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/CCD_Capture.v
-Z0 !s110 1738880942
+Z8 !s110 1739128520
 !i10b 1
 !s100 OJR9o<d98HinX8>[iZkL]1
 IOoVOn1if?eehnoKmGTiaH0
-Z1 dI:/ece554/ECE554_minilab2/questa_project
-Z2 w1738879412
+Z9 dI:/ece554/ECE554_minilab2/questa_project
+Z10 w1739047150
 8I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/CCD_Capture.v
 FI:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/CCD_Capture.v
-!i122 14
+!i122 73
 L0 43 146
-Z3 VDg1SIo80bB@j0V0VzS_@n1
-Z4 OL;L;2023.3;77
+Z11 VDg1SIo80bB@j0V0VzS_@n1
+Z12 OL;L;2023.3;77
 r1
 !s85 0
 31
-Z5 !s108 1738880942.000000
+Z13 !s108 1739128520.000000
 !s107 I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/CCD_Capture.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/CCD_Capture.v|
 !i113 0
-Z6 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-Z7 tCvgOpt 0
+Z14 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R6
 n@c@c@d_@capture
-vDE1_SoC_CAMERA
-2I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/DE1_SoC_CAMERA.v
-R0
+vcommand
+2I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/command.v
+Z15 !s110 1739128513
 !i10b 1
-!s100 3PJh:ez>U1jA`KEO@=bem3
-IlK[I@C0RNc^LeZQbmkP9D1
-R1
-R2
-8I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/DE1_SoC_CAMERA.v
-FI:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/DE1_SoC_CAMERA.v
-!i122 13
-L0 37 397
-R3
-R4
+!s100 <j?JPAH8Q=jzNY3>]Q=RL3
+ISXM<5aVl7:ajMm0<QCF_O1
+R9
+Z16 w1739047195
+8I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/command.v
+FI:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/command.v
+Z17 FI:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_Params.h
+!i122 58
+L0 43 496
+R11
+R12
 r1
 !s85 0
 31
-!s108 1738880941.000000
+Z18 !s108 1739128512.000000
+!s107 I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_Params.h|I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/command.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/command.v|
+!i113 0
+R14
+R6
+vcontrol_interface
+2I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/control_interface.v
+Z19 !s110 1739128512
+!i10b 1
+!s100 9BTPJm7z76V7akRfdI^j?3
+I[kbQ;Q@mX3KYIoAAZE9l<1
+R9
+R16
+8I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/control_interface.v
+FI:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/control_interface.v
+R17
+!i122 57
+L0 43 253
+R11
+R12
+r1
+!s85 0
+31
+R18
+!s107 I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_Params.h|I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/control_interface.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/control_interface.v|
+!i113 0
+R14
+R6
+vDE1_SoC_CAMERA
+2I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/DE1_SoC_CAMERA.v
+Z20 !s110 1739128511
+!i10b 1
+!s100 z^CB53aLSJYjdID2:z[z22
+I>RHJnM4ZOE;dW]2QSRR5O0
+R9
+Z21 w1739053468
+8I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/DE1_SoC_CAMERA.v
+FI:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/DE1_SoC_CAMERA.v
+!i122 55
+L0 37 431
+R11
+R12
+r1
+!s85 0
+31
+Z22 !s108 1739128511.000000
 !s107 I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/DE1_SoC_CAMERA.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/DE1_SoC_CAMERA.v|
 !i113 0
+R14
 R6
-R7
 n@d@e1_@so@c_@c@a@m@e@r@a
+vEDGE_DETECT
+2I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/EDGE_DETECT.sv
+Z23 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+R8
+!i10b 1
+!s100 II_VUN9?7FXb<j8nJ[T2<3
+IbOQFg3iGNCbA38a3a>Tdf0
+S1
+R9
+w1739125533
+8I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/EDGE_DETECT.sv
+FI:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/EDGE_DETECT.sv
+!i122 74
+L0 1 137
+R11
+R12
+r1
+!s85 0
+31
+R13
+!s107 I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/EDGE_DETECT.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/EDGE_DETECT.sv|
+!i113 0
+Z24 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R6
+n@e@d@g@e_@d@e@t@e@c@t
 vI2C_CCD_Config
 2I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/I2C_CCD_Config.v
-Z8 !s110 1738880137
+Z25 !s110 1739128519
 !i10b 1
 !s100 6M4]:_]5ZITo?O:kD9e9L2
 IUYeAcF[4iHEYk5g_M7Fz]1
-R1
-R2
+R9
+R10
 8I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/I2C_CCD_Config.v
 FI:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/I2C_CCD_Config.v
-!i122 4
+!i122 72
 L0 43 227
-R3
-R4
+R11
+R12
 r1
 !s85 0
 31
-Z9 !s108 1738880137.000000
+Z26 !s108 1739128519.000000
 !s107 I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/I2C_CCD_Config.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/I2C_CCD_Config.v|
 !i113 0
+R14
 R6
-R7
 n@i2@c_@c@c@d_@config
 vI2C_Controller
 2I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/I2C_Controller.v
-R8
+R25
 !i10b 1
 !s100 z^0D>X0bZ8`gOa3gSKUH73
 I_I9k<`>6Qnn[X3hhiHG:33
-R1
-R2
+R9
+Z27 w1739047151
 8I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/I2C_Controller.v
 FI:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/I2C_Controller.v
-!i122 5
+!i122 71
 L0 42 110
-R3
-R4
+R11
+R12
 r1
 !s85 0
 31
-R9
+R26
 !s107 I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/I2C_Controller.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/I2C_Controller.v|
 !i113 0
+R14
 R6
-R7
 n@i2@c_@controller
 vLine_Buffer1
 2I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/Line_Buffer1.v
-Z10 !s110 1738880138
+Z28 !s110 1739128518
 !i10b 1
 !s100 9IJVMP?:d`<CG]LYO`2Sf2
 I=^fTXFzM?5Re5Onf^d;le3
-R1
-R2
+R9
+R27
 8I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/Line_Buffer1.v
 FI:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/Line_Buffer1.v
-!i122 6
+!i122 70
 L0 39 51
-R3
-R4
+R11
+R12
 r1
 !s85 0
 31
-Z11 !s108 1738880138.000000
+Z29 !s108 1739128518.000000
 !s107 I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/Line_Buffer1.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/Line_Buffer1.v|
 !i113 0
+R14
 R6
-R7
 n@line_@buffer1
+vLine_Buffer2
+2I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/Line_Buffer2.v
+R20
+!i10b 1
+!s100 QcW_5U1W?<CgaZ4LHdk8U2
+IINz0=Om_o_PM]5U5?fSoz3
+R9
+R21
+8I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/Line_Buffer2.v
+FI:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/Line_Buffer2.v
+!i122 54
+Z30 L0 40 47
+R11
+R12
+r1
+!s85 0
+31
+R22
+!s107 I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/Line_Buffer2.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/Line_Buffer2.v|
+!i113 0
+R14
+R6
+n@line_@buffer2
+vLine_Buffer3
+2I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/Line_Buffer3.v
+!s110 1739128510
+!i10b 1
+!s100 TJe_c=Pm00YBnjYEIanid3
+Ii;Dj=h>U:TUc4FN_Lizej2
+R9
+w1739053572
+8I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/Line_Buffer3.v
+FI:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/Line_Buffer3.v
+!i122 53
+R30
+R11
+R12
+r1
+!s85 0
+31
+!s108 1739128510.000000
+!s107 I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/Line_Buffer3.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/Line_Buffer3.v|
+!i113 0
+R14
+R6
+n@line_@buffer3
 vRAW2RGB
 2I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/RAW2RGB.v
-R10
+R28
 !i10b 1
 !s100 ^g`aa[Z?>`KGzd68flhM<1
 Ik7>kBV[`M48UKD^N<g`S22
-R1
-R2
+R9
+R27
 8I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/RAW2RGB.v
 FI:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/RAW2RGB.v
-!i122 7
+!i122 69
 L0 43 86
-R3
-R4
+R11
+R12
 r1
 !s85 0
 31
-R11
+R29
 !s107 I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/RAW2RGB.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/RAW2RGB.v|
 !i113 0
+R14
 R6
-R7
 n@r@a@w2@r@g@b
 vReset_Delay
 2I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/Reset_Delay.v
-!s110 1738880139
+Z31 !s110 1739128517
 !i10b 1
 !s100 BO]QNi;435TJ@V_FJDUKD3
 Ibh6[1dF[HRk3mYd2dQh2?3
-R1
-R2
+R9
+R27
 8I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/Reset_Delay.v
 FI:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/Reset_Delay.v
-!i122 8
+!i122 68
 L0 43 40
-R3
-R4
+R11
+R12
 r1
 !s85 0
 31
-Z12 !s108 1738880139.000000
+Z32 !s108 1739128517.000000
 !s107 I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/Reset_Delay.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/Reset_Delay.v|
 !i113 0
+R14
 R6
-R7
 n@reset_@delay
+vsdr_data_path
+2I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/sdr_data_path.v
+R19
+!i10b 1
+!s100 l6moeijXlgbC:Pdij^Ii[1
+IZ:48bFcZTbjT;g6eHH6QJ2
+R9
+R16
+8I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/sdr_data_path.v
+FI:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/sdr_data_path.v
+R17
+!i122 56
+L0 43 89
+R11
+R12
+r1
+!s85 0
+31
+R22
+!s107 I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_Params.h|I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/sdr_data_path.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/sdr_data_path.v|
+!i113 0
+R14
+R6
 vSdram_Control
 2I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_Control.v
-!s110 1738880943
+Z33 !s110 1739128514
 !i10b 1
 !s100 8JY6jfYW]dO4kWgBWYn5b0
 I6KM4:9Q`Yha4V<1kQizBg3
-R1
-R2
+R9
+R16
 8I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_Control.v
 FI:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_Control.v
-FI:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_Params.h
-!i122 15
+R17
+!i122 61
 L0 37 572
-R3
-R4
+R11
+R12
 r1
 !s85 0
 31
-R5
+!s108 1739128514.000000
 !s107 I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_Params.h|I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_Control.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_Control.v|
 !i113 0
+R14
 R6
-R7
 n@sdram_@control
 vsdram_pll
 2I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll.v
-Z13 !s110 1738880140
+Z34 !s110 1739128516
 !i10b 1
 !s100 ^SUTelAgzTFcog_:@PK4W2
 IA;[kb3>9^@@GKzFE_mC_c3
-R1
-R2
+R9
+Z35 w1739047152
 8I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll.v
 FI:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll.v
-!i122 9
+!i122 64
 L0 8 20
-R3
-R4
+R11
+R12
 r1
 !s85 0
 31
-R12
+Z36 !s108 1739128515.000000
 !s107 I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll.v|
 !i113 0
+R14
 R6
-R7
 vsdram_pll_0002
 2I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll/sdram_pll_0002.v
-!s110 1738880136
+!s110 1739128515
 !i10b 1
 !s100 4zK=2iKQlS>hF=dV4PI@K0
 IZXhGCN=>Lj0cTkUORFQR32
-R1
-w1738879413
+R9
+R35
 8I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll/sdram_pll_0002.v
 FI:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll/sdram_pll_0002.v
-!i122 2
+!i122 63
 L0 2 94
-R3
-R4
+R11
+R12
 r1
 !s85 0
 31
-!s108 1738880135.000000
+R36
 !s107 I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll/sdram_pll_0002.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll/sdram_pll_0002.v|
 !i113 0
+R14
 R6
-R7
+vSdram_RD_FIFO
+2I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_RD_FIFO.v
+R33
+!i10b 1
+!s100 REzVC=@XESR41dddeFL@=1
+IdEL8i59;?TJRo^U;TgITJ3
+R9
+R16
+8I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_RD_FIFO.v
+FI:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_RD_FIFO.v
+!i122 60
+Z37 L0 39 64
+R11
+R12
+r1
+!s85 0
+31
+Z38 !s108 1739128513.000000
+!s107 I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_RD_FIFO.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_RD_FIFO.v|
+!i113 0
+R14
+R6
+n@sdram_@r@d_@f@i@f@o
+vSdram_WR_FIFO
+2I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_WR_FIFO.v
+R15
+!i10b 1
+!s100 NVOoJGNP:5i6Qe9YYnDCU2
+IZYbIK7SPa@bAfz>^H@UjO3
+R9
+R16
+8I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_WR_FIFO.v
+FI:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_WR_FIFO.v
+!i122 59
+R37
+R11
+R12
+r1
+!s85 0
+31
+R38
+!s107 I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_WR_FIFO.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_WR_FIFO.v|
+!i113 0
+R14
+R6
+n@sdram_@w@r_@f@i@f@o
 vSEG7_LUT
 2I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/SEG7_LUT.v
-R13
+R31
 !i10b 1
 !s100 o1P=QAl9SobWckCbL^Flb3
 Id8@1NnCnMON@33C:8=eLV2
-R1
-R2
+R9
+R27
 8I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/SEG7_LUT.v
 FI:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/SEG7_LUT.v
-!i122 10
+!i122 67
 L0 43 28
-R3
-R4
+R11
+R12
 r1
 !s85 0
 31
-!s108 1738880140.000000
+R32
 !s107 I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/SEG7_LUT.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/SEG7_LUT.v|
 !i113 0
+R14
 R6
-R7
 n@s@e@g7_@l@u@t
 vSEG7_LUT_6
 2I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/SEG7_LUT_6.v
-Z14 !s110 1738880141
+R34
 !i10b 1
 !s100 M2C49lj?<V]`o_<DP^3<^1
 Ij;YIDO85]6jJ:U:@_?m<43
-R1
-R2
+R9
+R27
 8I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/SEG7_LUT_6.v
 FI:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/SEG7_LUT_6.v
-!i122 11
+!i122 66
 L0 43 13
-R3
-R4
+R11
+R12
 r1
 !s85 0
 31
-Z15 !s108 1738880141.000000
+Z39 !s108 1739128516.000000
 !s107 I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/SEG7_LUT_6.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/SEG7_LUT_6.v|
 !i113 0
-R6
-R7
-n@s@e@g7_@l@u@t_6
-vVGA_Controller
-2I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/VGA_Controller.v
 R14
+R6
+n@s@e@g7_@l@u@t_6
+vtestbench
+2I:/ece554/ECE554_minilab2/testbench.sv
+R23
+!s110 1739128521
 !i10b 1
-!s100 9?Jf_KF6HVQMFmA4KJ>QI3
-I6AWWe6QHDKF44QaY_<lmI3
-R1
-R2
-8I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/VGA_Controller.v
-FI:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/VGA_Controller.v
-!i122 12
-L0 43 180
-R3
-R4
+!s100 =OBV0Y2LMl[l_42e0@do51
+IPMQRl^=JKQW?o4VhUE`^W3
+S1
+R9
+w1739128480
+8I:/ece554/ECE554_minilab2/testbench.sv
+FI:/ece554/ECE554_minilab2/testbench.sv
+!i122 75
+L0 2 292
+R11
+R12
 r1
 !s85 0
 31
-R15
+R13
+!s107 I:/ece554/ECE554_minilab2/testbench.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece554/ECE554_minilab2/testbench.sv|
+!i113 0
+R24
+R6
+vVGA_Controller
+2I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/VGA_Controller.v
+R34
+!i10b 1
+!s100 9?Jf_KF6HVQMFmA4KJ>QI3
+I6AWWe6QHDKF44QaY_<lmI3
+R9
+R27
+8I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/VGA_Controller.v
+FI:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/VGA_Controller.v
+!i122 65
+L0 43 180
+R11
+R12
+r1
+!s85 0
+31
+R39
 !s107 I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/VGA_Controller.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/VGA_Controller.v|
 !i113 0
+R14
 R6
-R7
 n@v@g@a_@controller

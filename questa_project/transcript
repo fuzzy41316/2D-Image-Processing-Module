@@ -1,18 +1,145 @@
+# Compile of Line_Buffer3.v was successful.
+# Compile of Line_Buffer2.v was successful.
 # Compile of DE1_SoC_CAMERA.v was successful.
+# Compile of sdr_data_path.v was successful.
+# Compile of control_interface.v was successful.
+# Compile of command.v was successful.
+# Compile of Sdram_WR_FIFO.v was successful.
+# Compile of Sdram_RD_FIFO.v was successful.
+# Compile of Sdram_Control.v was successful.
 # Compile of sdram_pll.vo was successful.
 # Compile of sdram_pll_0002.v was successful.
-# Compile of CCD_Capture.v was successful.
-# Compile of I2C_CCD_Config.v was successful.
-# Compile of I2C_Controller.v was successful.
-# Compile of Line_Buffer1.v was successful.
-# Compile of RAW2RGB.v was successful.
-# Compile of Reset_Delay.v was successful.
 # Compile of sdram_pll.v was successful.
-# Compile of SEG7_LUT.v was successful.
-# Compile of SEG7_LUT_6.v was successful.
 # Compile of VGA_Controller.v was successful.
-# 13 compiles, 0 failed with no errors.
-# Compile of DE1_SoC_CAMERA.v was successful.
+# Compile of SEG7_LUT_6.v was successful.
+# Compile of SEG7_LUT.v was successful.
+# Compile of Reset_Delay.v was successful.
+# Compile of RAW2RGB.v was successful.
+# Compile of Line_Buffer1.v was successful.
+# Compile of I2C_Controller.v was successful.
+# Compile of I2C_CCD_Config.v was successful.
 # Compile of CCD_Capture.v was successful.
-# Compile of Sdram_Control.v was successful.
-# 3 compiles, 0 failed with no errors.
+# Compile of EDGE_DETECT.sv was successful.
+# Compile of testbench.sv was successful.
+# 23 compiles, 0 failed with no errors.
+vsim -Lf C:/intelFPGA_lite/23.1std/questa_fse/intel/verilog/altera_mf -Lf C:/intelFPGA_lite/23.1std/questa_fse/intel/verilog/220model -L altera_mf -L altera_lnsim -L lpm -L sgate -L altera work.testbench
+# vsim -Lf C:/intelFPGA_lite/23.1std/questa_fse/intel/verilog/altera_mf -Lf C:/intelFPGA_lite/23.1std/questa_fse/intel/verilog/220model -L altera_mf -L altera_lnsim -L lpm -L sgate -L altera work.testbench 
+# Start time: 13:18:55 on Feb 09,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/DE1_SoC_CAMERA.v(340): (vopt-2241) Connection width does not match width of port 'iX_Cont'. The port definition is at: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/EDGE_DETECT.sv(8).
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/DE1_SoC_CAMERA.v(340): (vopt-2241) Connection width does not match width of port 'iY_Cont'. The port definition is at: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/EDGE_DETECT.sv(9).
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_Control.v(304): (vopt-2241) Connection width does not match width of port 'wrusedw'. The port definition is at: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_RD_FIFO.v(47).
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_Control.v(294): (vopt-2241) Connection width does not match width of port 'wrusedw'. The port definition is at: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_RD_FIFO.v(47).
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_Control.v(284): (vopt-2241) Connection width does not match width of port 'rdusedw'. The port definition is at: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_WR_FIFO.v(47).
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_Control.v(274): (vopt-2241) Connection width does not match width of port 'rdusedw'. The port definition is at: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_WR_FIFO.v(47).
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_Control.v(223): (vopt-2241) Connection width does not match width of port 'CMD'. The port definition is at: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/control_interface.v(46).
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/DE1_SoC_CAMERA.v(382): (vopt-2241) Connection width does not match width of port 'WR1_ADDR'. The port definition is at: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_Control.v(44).
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/DE1_SoC_CAMERA.v(382): (vopt-2241) Connection width does not match width of port 'WR1_MAX_ADDR'. The port definition is at: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_Control.v(45).
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/DE1_SoC_CAMERA.v(382): (vopt-2241) Connection width does not match width of port 'WR2_MAX_ADDR'. The port definition is at: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_Control.v(53).
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/DE1_SoC_CAMERA.v(382): (vopt-2241) Connection width does not match width of port 'RD1_ADDR'. The port definition is at: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_Control.v(60).
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/DE1_SoC_CAMERA.v(382): (vopt-2241) Connection width does not match width of port 'RD1_MAX_ADDR'. The port definition is at: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_Control.v(61).
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/DE1_SoC_CAMERA.v(382): (vopt-2241) Connection width does not match width of port 'RD2_MAX_ADDR'. The port definition is at: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_Control.v(69).
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/DE1_SoC_CAMERA.v(382): (vopt-2241) Connection width does not match width of port 'SA'. The port definition is at: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_Control.v(74).
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/DE1_SoC_CAMERA.v(382): (vopt-2241) Connection width does not match width of port 'CS_N'. The port definition is at: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_Control.v(76).
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/DE1_SoC_CAMERA.v(326): (vopt-2241) Connection width does not match width of port 'iX_Cont'. The port definition is at: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/RAW2RGB.v(47).
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/DE1_SoC_CAMERA.v(326): (vopt-2241) Connection width does not match width of port 'iY_Cont'. The port definition is at: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/RAW2RGB.v(48).
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/Line_Buffer1.v(69): (vopt-2685) [TFMPC] - Too few port connections for 'ALTSHIFT_TAPS_component'.  Expected 7, found 6.
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/Line_Buffer1.v(69): (vopt-2718) [TFMPC] - Missing connection for port 'sclr'.
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/RAW2RGB.v(79): (vopt-2685) [TFMPC] - Too few port connections for 'u0'.  Expected 6, found 5.
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/RAW2RGB.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'shiftout'.
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll/sdram_pll_0002.v(87): (vopt-2685) [TFMPC] - Too few port connections for 'altera_pll_i'.  Expected 26, found 6.
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll/sdram_pll_0002.v(87): (vopt-2718) [TFMPC] - Missing connection for port 'zdbfbclk'.
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll/sdram_pll_0002.v(87): (vopt-2718) [TFMPC] - Missing connection for port 'cascade_out'.
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll/sdram_pll_0002.v(87): (vopt-2718) [TFMPC] - Missing connection for port 'extclk_out'.
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll/sdram_pll_0002.v(87): (vopt-2718) [TFMPC] - Missing connection for port 'loaden'.
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll/sdram_pll_0002.v(87): (vopt-2718) [TFMPC] - Missing connection for port 'lvds_clk'.
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll/sdram_pll_0002.v(87): (vopt-2718) [TFMPC] - Missing connection for port 'phout'.
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll/sdram_pll_0002.v(87): (vopt-2718) [TFMPC] - Missing connection for port 'clkbad'.
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll/sdram_pll_0002.v(87): (vopt-2718) [TFMPC] - Missing connection for port 'activeclk'.
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll/sdram_pll_0002.v(87): (vopt-2718) [TFMPC] - Missing connection for port 'reconfig_from_pll'.
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll/sdram_pll_0002.v(87): (vopt-2718) [TFMPC] - Missing connection for port 'phase_done'.
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll/sdram_pll_0002.v(87): (vopt-2718) [TFMPC] - Missing connection for port 'cclk'.
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll/sdram_pll_0002.v(87): (vopt-2718) [TFMPC] - Missing connection for port 'adjpllin'.
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll/sdram_pll_0002.v(87): (vopt-2718) [TFMPC] - Missing connection for port 'extswitch'.
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll/sdram_pll_0002.v(87): (vopt-2718) [TFMPC] - Missing connection for port 'reconfig_to_pll'.
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll/sdram_pll_0002.v(87): (vopt-2718) [TFMPC] - Missing connection for port 'cntsel'.
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll/sdram_pll_0002.v(87): (vopt-2718) [TFMPC] - Missing connection for port 'scanclk'.
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll/sdram_pll_0002.v(87): (vopt-2718) [TFMPC] - Missing connection for port 'num_phase_shifts'.
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll/sdram_pll_0002.v(87): (vopt-2718) [TFMPC] - Missing connection for port 'updn'.
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll/sdram_pll_0002.v(87): (vopt-2718) [TFMPC] - Missing connection for port 'phase_en'.
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/sdram_pll/sdram_pll_0002.v(87): (vopt-2718) [TFMPC] - Missing connection for port 'refclk1'.
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_Control.v(223): (vopt-2685) [TFMPC] - Too few port connections for 'u_control_interface'.  Expected 17, found 16.
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_Control.v(223): (vopt-2718) [TFMPC] - Missing connection for port 'INIT_ACK'.
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/I2C_CCD_Config.v(188): (vopt-2685) [TFMPC] - Too few port connections for 'u0'.  Expected 9, found 8.
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/I2C_CCD_Config.v(188): (vopt-2718) [TFMPC] - Missing connection for port 'W_R'.
+# ** Warning: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/I2C_CCD_Config.v(237): (vopt-2569) Removing unused hanging process.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=47.
+# Loading sv_std.std
+# Loading work.testbench(fast)
+# Loading work.EDGE_DETECT(fast)
+# Loading altera_lnsim.altera_generic_pll_functions(fast)
+# Loading altera_lnsim.altera_lnsim_functions(fast)
+# Loading altera_lnsim.altera_pll(fast)
+# Loading work.Sdram_WR_FIFO(fast)
+# Loading work.Sdram_RD_FIFO(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (11) does not match connection size (16) for port 'iX_Cont'. The port definition is at: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/EDGE_DETECT.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/DUT/u4_5 File: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/DE1_SoC_CAMERA.v Line: 340
+# ** Warning: (vsim-3015) [PCDPC] - Port size (11) does not match connection size (16) for port 'iY_Cont'. The port definition is at: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/v/EDGE_DETECT.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/DUT/u4_5 File: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/DE1_SoC_CAMERA.v Line: 340
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (8) for port 'rdusedw'. The port definition is at: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_WR_FIFO.v(47).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/DUT/u7/u_write1_fifo File: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_Control.v Line: 274
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (8) for port 'rdusedw'. The port definition is at: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_WR_FIFO.v(47).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/DUT/u7/u_write2_fifo File: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_Control.v Line: 284
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (8) for port 'wrusedw'. The port definition is at: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_RD_FIFO.v(47).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/DUT/u7/u_read1_fifo File: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_Control.v Line: 294
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (8) for port 'wrusedw'. The port definition is at: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_RD_FIFO.v(47).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/DUT/u7/u_read2_fifo File: I:/ece554/ECE554_minilab2/DE1_SoC_CAMERA_ref/Sdram_Control/Sdram_Control.v Line: 304
+run -all
+# Info: =================================================
+# Info:           Generic PLL Summary
+# Info: =================================================
+# Time scale of (testbench.DUT.u6.sdram_pll_inst.altera_pll_i.new_model.gpll.no_need_to_gen) is  1ps /  1ps
+# Info: hierarchical_name = testbench.DUT.u6.sdram_pll_inst.altera_pll_i.new_model.gpll.no_need_to_gen
+# Info: reference_clock_frequency = 50.0 MHz
+# Info: output_clock_frequency = 100 MHZ
+# Info: phase_shift = 0 ps
+# Info: duty_cycle = 50
+# Info: sim_additional_refclk_cycles_to_lock = 0
+# Info: output_clock_high_period = 5000.000000
+# Info: output_clock_low_period = 5000.000000
+# Resetting DUT...
+# Info: hierarchical_name = testbench.DUT.u6.sdram_pll_inst.altera_pll_i.new_model.gpll.UI
+# Warning: The frequency of the reference clock signal differs from the specified frequency (50.0 MHz).
+# Successfully reset the DUT.
+# ////////////////////////////////
+# // Testing grayscale mode... //
+# //////////////////////////////
+# ------------------------
+# Forced values:
+#     mCCD_DATA: 101
+#     mCCD_DVAL: 0
+#     X_Cont: 0000
+#     Y_Cont: 0000
+# ------------------------
+# Checking on valid signal that the selected pixel was swapped to our image_processing module...
+# ------------------------
+#   Red pixel was swapped.
+#   Green pixel was swapped.
+#   Blue pixel was swapped.
+#   SUCCESS: all selected pixels were swapped.
+# ------------------------
+# Checking that the selected pixel was converted to grayscale...
+# ------------------------
+#   Pixel value was converted to grayscale.
+#   Red pixel was converted to grayscale.
+#   Green pixel was converted to grayscale.
+#   Blue pixel was converted to grayscale.
+#   SUCCESS: all pixels were converted to grayscale.
+# ------------------------
+# ////////////////////////////////////
+# // Grayscale mode test passed. //
+# /////////////////////////////////
+# Setting SW[1] to 0 to turn off grayscale mode...
+# ** Note: $stop    : I:/ece554/ECE554_minilab2/testbench.sv(288)
+#    Time: 10 ps  Iteration: 1  Instance: /testbench
+# Break at I:/ece554/ECE554_minilab2/testbench.sv line 288
